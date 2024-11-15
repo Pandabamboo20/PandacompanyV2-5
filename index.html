@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentación de Pandabamboo</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7430652626903501" 
+     crossorigin="anonymous"></script>
+<style>
+    *{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;line-height:1.6;color:#f9f9f9;background:linear-gradient(to bottom,#000,#fff)}
+    .container{width:90%;max-width:1200px;margin:auto}header{background-color:#1a1a1a;color:white;padding:2rem 0;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.5)}
+    header h1{font-size:2.5rem}header h2{margin:0.5rem 0 1.5rem 0;font-weight:400}
+    header img{max-width:200px;margin-bottom:1rem;cursor:pointer}
+    nav ul{list-style:none;padding:0}nav ul li{display:inline;margin-right:20px}
+    nav ul li a{color:#6ab04c;text-decoration:none;font-weight:bold;transition:color 0.3s ease}
+    nav ul li a:hover{color:#4a9e37}.content-section{background:#2c3e50;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.3);padding:2rem;margin:2rem 0;transition:transform 0.3s}
+    .content-section:hover{transform:translateY(-5px)}h3{margin-top:0;font-size:2rem;color:#f9f9f9}
+    .project{margin-bottom:1.5rem}.project h4{font-size:1.5rem}
+    .button{display:inline-block;margin-top:1rem;padding:10px 15px;background-color:#3498db;color:white;text-decoration:none;border-radius:5px;transition:background-color 0.3s}
+    .button:hover{background-color:#2980b9}.social-links{display:flex;justify-content:center;margin:20px 0}
+    .social-links a{display:inline-flex;align-items:center}.social-logo{width:40px;height:auto;margin:0 10px;transition:transform 0.3s ease}
+    .social-logo:hover{transform:scale(1.1)}footer{text-align:center;padding:1rem;background-color:#1a1a1a;color:white;position:relative;bottom:0;width:100%}
+    #hidden-message{display:none;text-align:center;margin-top:10px;color:#6ab04c;font-weight:bold;cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <img src="https://i.ibb.co/094G2G0/Panda-Logo.webp" alt="Panda-Logo" id="logo">
+        <h1>Bienvenido a mi presentación</h1>
+        <h2>Sobre mí</h2>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introducción</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <section id="introduction" class="content-section">
+        <h3>Hola, soy Pandabamboo</h3>
+        <p>Soy un <strong>desarrollador de videojuegos independiente</strong> con una gran pasión por crear experiencias inmersivas y <strong>originales</strong>. Mi enfoque se centra en el diseño de videojuegos innovadores, explorando nuevas formas de contar historias interactivas y de involucrar a los jugadores. Me encanta <strong>experimentar con mecánicas de juego</strong> únicas y asegurarme de que cada proyecto que desarrollo ofrezca algo diferente.</p>
+        <p>A lo largo de mi carrera, he trabajado en varios proyectos, tanto personales como colaborativos, utilizando herramientas como <strong>motor gráfico 2D/3D</strong> y lenguajes de programación como <strong>C#</strong> y <strong>Python</strong>. Además, me gusta mantenerme actualizado sobre las últimas tendencias y tecnologías dentro de la industria de los videojuegos para asegurarme de que mi trabajo sea siempre relevante.</p>
+        <p>Mi objetivo es crear <strong>juegos que sean tanto divertidos como desafiantes</strong>, proporcionando experiencias que queden grabadas en la memoria de los jugadores. A través de mis proyectos, busco no solo entretener, sino también invitar a la reflexión y el asombro. Mi mayor satisfacción proviene de ver cómo las personas interactúan y se sumergen en los mundos que creo, y de saber que he logrado ofrecer algo único a la comunidad de jugadores.</p>
+        <p>Si deseas saber más sobre mi trabajo o los proyectos en los que estoy involucrado, no dudes en explorar mi portafolio o seguirme en mis redes sociales para estar al tanto de mis últimos avances y lanzamientos.</p>
+    </section>
+    <section id="projects" class="content-section">
+        <h3>Proyectos</h3>
+        <div class="project">
+            <h4>Proyecto: Five Nights At Shower</h4>
+            <p>FIVE NIGHTS AT SHOWER es un juego de terror en primera persona ambientado en una ducha aparentemente normal, pero embrujada.</p>
+            <a href="#" class="button">Próximamente</a>
+        </div>
+    </section>
+</main>
+<footer>
+    <div id="hidden-message">
+        <input type="text" id="secret-input" placeholder="Escribe aquí...">
+    </div>
+    <div class="social-links">
+        <a href="https://twitter.com/Pandabamboo2023" target="_blank">
+            <img src="https://i.ibb.co/wccdrNz/twitter.png" alt="Twitter" class="social-logo">
+        </a>
+        <a href="https://www.instagram.com/pandabamboo20/" target="_blank">
+            <img src="https://i.ibb.co/YBnZxxd/instagram.png" alt="Instagram" class="social-logo">
+        </a>
+        <a href="https://www.youtube.com/@Pandabamboo20" target="_blank">
+            <img src="https://i.ibb.co/8jF0hn0/youtube.png" alt="YouTube" class="social-logo">
+        </a>
+    </div>
+    <p>&copy; 2024 Presentación de Pandabamboo. Todos los derechos reservados.</p>
+</footer>
+<script>
+    let clickCount = 0;
+    const logo = document.getElementById('logo'),
+          hiddenMessage = document.getElementById('hidden-message'),
+          secretInput = document.getElementById('secret-input');
+          
+    logo.addEventListener('click', () => {
+        clickCount++;
+        if (clickCount === 21) {
+            hiddenMessage.style.display = "block";
+        }
+    });
+
+    secretInput.addEventListener('input', () => {
+        if (secretInput.value === "Azul eléctrico") {
+            hiddenMessage.innerHTML = '<span id="secret-message">Me conoces muy bien</span>';
+            document.getElementById("secret-message").addEventListener("click", () => {
+                window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=dRoavakeJbeisuL2";
+            });
+        }
+    });
+
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+</body>
+</html>
